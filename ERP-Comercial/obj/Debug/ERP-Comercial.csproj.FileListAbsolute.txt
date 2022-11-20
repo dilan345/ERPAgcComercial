@@ -73,3 +73,5 @@ D:\Documentos AlexUpt\Documents\Repos\ERP-Comercial\ERP-Comercial\obj\Debug\ERP-
 D:\Documentos AlexUpt\Documents\Repos\ERP-Comercial\ERP-Comercial\obj\Debug\ERP-Comercial.csproj.CopyComplete
 D:\Documentos AlexUpt\Documents\Repos\ERP-Comercial\ERP-Comercial\obj\Debug\ERP-Comercial.dll
 D:\Documentos AlexUpt\Documents\Repos\ERP-Comercial\ERP-Comercial\obj\Debug\ERP-Comercial.pdb
+D:\Documentos AlexUpt\Documents\Repos\ERP-Comercial\ERP-Comercial\obj\Debug\ERP_Comercial.Migrations.TablasVersion1.resources
+D:\Documentos AlexUpt\Documents\Repos\ERP-Comercial\ERP-Comercial\obj\Debug\ERP-Comercial.csproj.GenerateResource.cache

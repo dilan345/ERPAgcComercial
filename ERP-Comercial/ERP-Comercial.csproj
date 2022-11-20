@@ -163,6 +163,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211200533579_TablasVersion-1.cs" />
+    <Compile Include="Migrations\202211200533579_TablasVersion-1.designer.cs">
+      <DependentUpon>202211200533579_TablasVersion-1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\CotizacionVenta.cs" />
     <Compile Include="Models\Factura.cs" />
@@ -279,6 +284,11 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202211200533579_TablasVersion-1.resx">
+      <DependentUpon>202211200533579_TablasVersion-1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
