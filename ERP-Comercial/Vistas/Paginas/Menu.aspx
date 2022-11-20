@@ -1,0 +1,94 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/PaginasMaestras/Home.Master" AutoEventWireup="true" CodeBehind="Menu.aspx.cs" Inherits="AgcCiomercial.Views.Paginas.Menu" %>
+
+<%-- Cabeza de pagina maestra --%>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Menu</title>
+    <link href="../Estilos/Men.css" rel="stylesheet" />
+    <%-- Cuerpo de pagina maestra --%>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <br /> <br /> <br />
+    <%-- Cuerpo --%>
+    <div class="Fondo">
+
+        <div class="container-fluid text-center">
+            
+            <h1 style="color:aliceblue"> <br />
+                Bienvenido al sistema ERP de AGC Comercial</h1>
+            <br />
+            <h3 style="color:aliceblue">(Sistema de planificación de recursos empresariales)</h3>
+            <br />
+        </div>
+        
+        <%--<div class="container-fluid">
+            <br />
+            <br />
+            <div class="row g-3 text-center justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-6 align-self-center justify-content-center" style="width: 45vh;">
+                    <div class="card c">
+                        <img src="../Estilos/Recursos/Ventas.jpg" alt="Ventas" class="card-img-top align-self-center" style="height: 22vh; width: 100%;" />
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Ventas</b></h5>
+                            <p class="card-text"></p>
+                            <asp:Button ID="btnVentas" runat="server" Text="Ir" class="btn btn-secondary btn-lg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 align-self-center justify-content-center" style="width: 45vh;">
+                    <div class="card">
+                        <img src="../Estilos/Recursos/Compras.jpg" alt="Compras" class="card-img-top align-self-center" style="height: 22vh; width: 100%;" />
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Compras</b></h5>
+                            <p class="card-text"></p>
+                            <asp:Button ID="btnCompras" runat="server" Text="Ver" class="btn btn-secondary btn-lg" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br />
+
+            <div class="row g-3 text-center justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-6 align-self-center justify-content-center" style="width: 45vh;">
+                    <div class="card">
+                        <img src="../Estilos/Recursos/Catalogo.jpg" alt="Catálogo" class="card-img-top align-self-center" style="height: 22vh; width: 100%;" />
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Catálogos</b></h5>
+                            <p class="card-text"></p>
+                            <asp:Button ID="btnCatalogos" runat="server" Text="Ver" class="btn btn-secondary btn-lg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 align-self-center justify-content-center" style="width: 45vh;">
+                    <div class="card">
+                        <img src="../Estilos/Recursos/Finanzas.jpg" alt="Finanzas" class="card-img-top align-self-center" style="height: 22vh; width: 100%;" />
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Finanzas</b></h5>
+                            <p class="card-text"></p>
+                            <asp:Button ID="btnFinanzas" runat="server" Text="Ver" class="btn btn-secondary btn-lg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 align-self-center justify-content-center" style="width: 45vh;">
+                    <div class="card">
+                        <img src="../Estilos/Recursos/Users.jpg" alt="Finanzas" class="card-img-top align-self-center" style="height: 22vh; width: 100%;" />
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Usuarios</b></h5>
+                            <p class="card-text"></p>
+                            <asp:Button ID="BtnUsuarios" runat="server" Text="Editar" class="btn btn-secondary btn-lg" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br />
+        </div>--%>
+    </div>
+</asp:Content>

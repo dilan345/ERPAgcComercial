@@ -1,0 +1,52 @@
+﻿/*Head*/
+
+.nav{
+    margin-left:20px;
+    text-decoration:none;
+    font-size:1rem;
+    color:aliceblue
+}
+
+/*Cuerpo*/
+
+.dropdown {
+    border-style: solid;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.Logo {
+    width: 8em;
+    height: 7em;
+    position: relative;
+    top: 0.8em;
+}
+
+.text, a {
+    color: aliceblue;
+    position: relative;
+    font-family: Bahnschrift;
+    font-size: 11px;
+}
+
+#LogOut{
+    margin-right:20px;
+}
+
+/*Pie de pagina*/
+footer {
+    width: 100%;
+    height: auto;
+    color: aliceblue
+}
+
+.fa-facebook, .fa-instagram {
+    color: aliceblue;
+    font-size: 2.5em;
+}
+
+/*Hover*/
+i:hover,.nav:hover{
+    color: #fe9902;
+}
+
