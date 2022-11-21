@@ -142,6 +142,7 @@
     <Content Include="Vistas\Estilos\Recursos\FondoProveedores.jpg" />
     <Content Include="Vistas\Estilos\Recursos\LoginFondo.jpg" />
     <Content Include="Vistas\Estilos\Recursos\LOGO CUBO.png" />
+    <Content Include="Vistas\Estilos\Recursos\LOGOS AGC - LINEA DE PRODUCTOS.png" />
     <Content Include="Vistas\Estilos\Recursos\magnifying-glass-solid.svg" />
     <Content Include="Vistas\Estilos\Recursos\MenuFondo.jpg" />
     <Content Include="Vistas\Estilos\Recursos\NuevaCotizacionFondo.jpg" />
@@ -151,7 +152,9 @@
     <Content Include="Vistas\Estilos\Recursos\Users.jpg" />
     <Content Include="Vistas\Estilos\Recursos\Ventas.jpg" />
     <Content Include="Vistas\Login.aspx" />
+    <Content Include="Vistas\Logout.aspx" />
     <Content Include="Vistas\Paginas\Menu.aspx" />
+    <Content Include="TEMPORALES.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +193,13 @@
     </Compile>
     <Compile Include="Vistas\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\PaginasMaestras\Estandar.Master.cs">
       <DependentUpon>Estandar.Master</DependentUpon>

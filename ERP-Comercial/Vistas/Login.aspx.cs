@@ -16,10 +16,7 @@ namespace ERP_Comercial.Vistas
         String InicioSesion = @"<script type='text/javascript'>alert('Usuario y/o contraseña incorrectos.');</script>";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["jwt"] != null)
-            {
-
-            }
+            
         }
 
         protected void BtnIniciar_Click(object sender, EventArgs e)

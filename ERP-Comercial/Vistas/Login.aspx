@@ -16,7 +16,8 @@
              <nav class="navbar justify-content-center">
                 <div class="container-fluid justify-content-center ">
                     <a class="navbar-brand justify-content-center" href="Login.aspx">
-                        <img src="Estilos/Recursos/LOGO CUBO.png" alt="Logo" width="58" height="48" class="d-inline-block align-text-center" />
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Vistas/Estilos/Recursos/LOGO CUBO.png" 
+                            alt="Logo" width="58" height="48" class="d-inline-block align-text-center"/>
                         <font>AGC COMERCIAL</font>
                     </a>
                 </div>

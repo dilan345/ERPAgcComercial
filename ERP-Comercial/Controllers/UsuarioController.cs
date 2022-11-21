@@ -143,7 +143,7 @@ namespace ERP_Comercial.Controllers
             {
                 DateTime expira;
 
-                expira = DateTime.Now.AddMinutes(2);
+                expira = DateTime.Now.AddMinutes(.25);
                 Epoch epoch = new Epoch();
 
                 Dictionary<string, object> payload = new Dictionary<string, object>()

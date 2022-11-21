@@ -1,4 +1,19 @@
-﻿/*Head*/
+﻿/*
+    Paleta de colores
+    Verde Agua:
+    #0f777e
+    Gris:
+    #d4d3d0
+    Naranja:
+    #fe9902
+    Blanco:
+    #fbfbfb
+    Gris 2:
+    #97aaa8
+*/
+
+
+/*Head*/
 
 .nav{
     margin-left:20px;
@@ -7,8 +22,52 @@
     color:aliceblue
 }
 
-/*Cuerpo*/
+/* - - - - - - - - - - EDITADO POR ALEX BARRA INICIO - - - - - - - - - -*/
+#barraInicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:.2%;
+    padding:.6%;
+}
 
+#IconoSalir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position:absolute;
+    right: .8%;
+}
+
+#IconoSalir:hover {
+    opacity: .5;
+}
+
+.redes{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.redes i{
+    padding-right: 15px;
+}
+
+.NumLlamada{
+    position:absolute;
+    top:10px
+}
+
+#TelLocal{
+    margin-left: 135px;
+}
+
+#CuboAGC2 {
+    margin-left:80%;
+}
+/* - - - - - - - - - - EDITADO POR ALEX BARRA INICIO - - - - - - - - - -*/
+/*Cuerpo*/
 .dropdown {
     border-style: solid;
     border-radius: 9px;
@@ -37,7 +96,8 @@
 footer {
     width: 100%;
     height: auto;
-    color: aliceblue
+    color: aliceblue;
+    padding-top:.2%;
 }
 
 .fa-facebook, .fa-instagram {
@@ -47,6 +107,6 @@ footer {
 
 /*Hover*/
 i:hover,.nav:hover{
-    color: #fe9902;
+    
 }
 

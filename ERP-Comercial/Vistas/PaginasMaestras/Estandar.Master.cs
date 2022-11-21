@@ -13,5 +13,10 @@ namespace ERP_Comercial.Vistas.PaginasMaestras
         {
 
         }
+
+        protected void LogOut_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.RedirectToRoute("BorrarJWT");
+        }
     }
 }
