@@ -15,12 +15,20 @@ namespace AGCComercial.Models
         public String UsuarioID { get; set; }
 
         public String Nombre { get; set; }
-        public int TipoUsuario { get; set; }
-        public String Perfil { get; set; }
+        public String UserName { get; set; }
         public String Correo { get; set; }
         public String Contraseña { get; set; }
         
         public virtual List<Pedido> Pedidos { get; set; }
         public virtual List<CotizacionVenta> CotizacionVentas { get; set; }
+    }
+
+    public class UsuarioDTO
+    {
+        public String UsuarioID { get; set; }
+        public String Nombre { get; set; }
+        public String UserName { get; set; }
+        public String Correo { get; set; }
+        public String Contraseña { get; set; }
     }
 }

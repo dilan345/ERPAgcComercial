@@ -50,6 +50,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="HTTPupt">
+      <HintPath>..\..\..\Codigos y lenguajes\C#\Carpeta2\Librerias ASP\HTTPupt.dll</HintPath>
+    </Reference>
     <Reference Include="jose-jwt, Version=4.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\jose-jwt.4.0.1\lib\net472\jose-jwt.dll</HintPath>
     </Reference>
@@ -148,24 +151,22 @@
     <Content Include="Vistas\Estilos\Recursos\Users.jpg" />
     <Content Include="Vistas\Estilos\Recursos\Ventas.jpg" />
     <Content Include="Vistas\Login.aspx" />
-    <Content Include="Vistas\Paginas\CatalogoClientes.aspx" />
-    <Content Include="Vistas\Paginas\CatalogoProductos.aspx" />
-    <Content Include="Vistas\Paginas\CatalogoProveedores.aspx" />
-    <Content Include="Vistas\Paginas\Cotizaciones.aspx" />
     <Content Include="Vistas\Paginas\Menu.aspx" />
-    <Content Include="Vistas\Paginas\NuevaCotizacion.aspx" />
-    <Content Include="Vistas\Paginas\OrdenVenta.aspx" />
-    <Content Include="Vistas\Paginas\ProductosCotizados.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202211200533579_TablasVersion-1.cs" />
     <Compile Include="Migrations\202211200533579_TablasVersion-1.designer.cs">
       <DependentUpon>202211200533579_TablasVersion-1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211200633509_ActualizacionUsuario.cs" />
+    <Compile Include="Migrations\202211200633509_ActualizacionUsuario.designer.cs">
+      <DependentUpon>202211200633509_ActualizacionUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cliente.cs" />
@@ -177,6 +178,11 @@
     <Compile Include="Models\Proveedor.cs" />
     <Compile Include="Models\Remision.cs" />
     <Compile Include="Models\Usuario.cs" />
+    <Compile Include="ProcesoJWT\CrearJWT.cs" />
+    <Compile Include="ProcesoJWT\Epoch.cs" />
+    <Compile Include="ProcesoJWT\InicioSesion.cs" />
+    <Compile Include="ProcesoJWT\JSONwt.cs" />
+    <Compile Include="ProcesoJWT\JWTAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vistas\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -185,40 +191,12 @@
     <Compile Include="Vistas\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PaginasMaestras\Home.Master.cs">
-      <DependentUpon>Home.Master</DependentUpon>
+    <Compile Include="Vistas\PaginasMaestras\Estandar.Master.cs">
+      <DependentUpon>Estandar.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vistas\PaginasMaestras\Home.Master.designer.cs">
-      <DependentUpon>Home.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Paginas\CatalogoClientes.aspx.cs">
-      <DependentUpon>CatalogoClientes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vistas\Paginas\CatalogoClientes.aspx.designer.cs">
-      <DependentUpon>CatalogoClientes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Paginas\CatalogoProductos.aspx.cs">
-      <DependentUpon>CatalogoProductos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vistas\Paginas\CatalogoProductos.aspx.designer.cs">
-      <DependentUpon>CatalogoProductos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Paginas\CatalogoProveedores.aspx.cs">
-      <DependentUpon>CatalogoProveedores.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vistas\Paginas\CatalogoProveedores.aspx.designer.cs">
-      <DependentUpon>CatalogoProveedores.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Paginas\Cotizaciones.aspx.cs">
-      <DependentUpon>Cotizaciones.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vistas\Paginas\Cotizaciones.aspx.designer.cs">
-      <DependentUpon>Cotizaciones.aspx</DependentUpon>
+    <Compile Include="Vistas\PaginasMaestras\Estandar.Master.designer.cs">
+      <DependentUpon>Estandar.Master</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Paginas\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
@@ -226,27 +204,6 @@
     </Compile>
     <Compile Include="Vistas\Paginas\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Paginas\NuevaCotizacion.aspx.cs">
-      <DependentUpon>NuevaCotizacion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vistas\Paginas\NuevaCotizacion.aspx.designer.cs">
-      <DependentUpon>NuevaCotizacion.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Paginas\OrdenVenta.aspx.cs">
-      <DependentUpon>OrdenVenta.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vistas\Paginas\OrdenVenta.aspx.designer.cs">
-      <DependentUpon>OrdenVenta.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vistas\Paginas\ProductosCotizados.aspx.cs">
-      <DependentUpon>ProductosCotizados.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vistas\Paginas\ProductosCotizados.aspx.designer.cs">
-      <DependentUpon>ProductosCotizados.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -273,7 +230,7 @@
     <Content Include="Scripts\bootstrap.esm.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
-    <Content Include="Vistas\PaginasMaestras\Home.Master" />
+    <Content Include="Vistas\PaginasMaestras\Estandar.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -283,11 +240,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202211200533579_TablasVersion-1.resx">
       <DependentUpon>202211200533579_TablasVersion-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211200633509_ActualizacionUsuario.resx">
+      <DependentUpon>202211200633509_ActualizacionUsuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

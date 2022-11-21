@@ -11,6 +11,9 @@ namespace ERP_Comercial
     {
         protected void Application_Start()
         {
+            RouteTable.Routes.MapPageRoute("Menu", "menu", "~/Vistas/Paginas/Menu.aspx");
+
+
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }

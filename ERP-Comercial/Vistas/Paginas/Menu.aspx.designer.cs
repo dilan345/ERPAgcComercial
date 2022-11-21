@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace AgcCiomercial.Views.Paginas
+namespace ERP_Comercial.Vistas.Paginas
 {
 
 

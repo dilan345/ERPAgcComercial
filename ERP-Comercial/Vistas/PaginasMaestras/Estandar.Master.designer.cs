@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace AgcCiomercial.Views.PaginasMaestras
+namespace ERP_Comercial.Vistas.PaginasMaestras
 {
 
 
-    public partial class Home
+    public partial class Estandar
     {
 
         /// <summary>

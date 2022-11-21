@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace AgcCiomercial.Views.Paginas
+namespace ERP_Comercial.Vistas.PaginasMaestras
 {
-    public partial class ProductosCotizados : System.Web.UI.Page
+    public partial class Estandar : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
