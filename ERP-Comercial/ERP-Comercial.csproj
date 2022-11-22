@@ -155,6 +155,7 @@
     <Content Include="Vistas\Logout.aspx" />
     <Content Include="Vistas\Paginas\Menu.aspx" />
     <Content Include="TEMPORALES.txt" />
+    <Content Include="Vistas\Paginas\PruebaSelected.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +202,13 @@
     <Compile Include="Vistas\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\PaginasMaestras\BarraNavegacion.Master.cs">
+      <DependentUpon>BarraNavegacion.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\PaginasMaestras\BarraNavegacion.Master.designer.cs">
+      <DependentUpon>BarraNavegacion.Master</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\PaginasMaestras\Estandar.Master.cs">
       <DependentUpon>Estandar.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +222,13 @@
     </Compile>
     <Compile Include="Vistas\Paginas\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\PruebaSelected.aspx.cs">
+      <DependentUpon>PruebaSelected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\PruebaSelected.aspx.designer.cs">
+      <DependentUpon>PruebaSelected.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -241,6 +256,7 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Vistas\PaginasMaestras\Estandar.Master" />
+    <Content Include="Vistas\PaginasMaestras\BarraNavegacion.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

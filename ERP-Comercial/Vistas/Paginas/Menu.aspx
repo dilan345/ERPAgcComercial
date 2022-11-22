@@ -23,7 +23,7 @@
             <br />
         </div>--%>
 
-        <div class="container-fluid">
+        <div class="container-fluid contenedor">
             <br />
             <br />
             <div class="row g-3 text-center justify-content-center">
