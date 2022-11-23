@@ -11,52 +11,61 @@ namespace ERP_Comercial.Vistas.Paginas
 {
 
 
-    public partial class Menu
+    public partial class AgregarCliente
     {
 
         /// <summary>
-        /// Control btnVentas.
+        /// Control txtRFCClient.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVentas;
+        protected global::System.Web.UI.WebControls.TextBox txtRFCClient;
 
         /// <summary>
-        /// Control btnCompras.
+        /// Control txtNom.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCompras;
+        protected global::System.Web.UI.WebControls.TextBox txtNom;
 
         /// <summary>
-        /// Control btnCatalogos.
+        /// Control txtDirecClient.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCatalogos;
+        protected global::System.Web.UI.WebControls.TextBox txtDirecClient;
 
         /// <summary>
-        /// Control btnFinanzas.
+        /// Control txttelClient.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFinanzas;
+        protected global::System.Web.UI.WebControls.TextBox txttelClient;
 
         /// <summary>
-        /// Control BtnUsuarios.
+        /// Control txtEmailClient.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUsuarios;
+        protected global::System.Web.UI.WebControls.TextBox txtEmailClient;
+
+        /// <summary>
+        /// Control btnGuardarClient.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnGuardarClient;
     }
 }

@@ -11,52 +11,52 @@ namespace ERP_Comercial.Vistas.Paginas
 {
 
 
-    public partial class Menu
+    public partial class NuevoProducto
     {
 
         /// <summary>
-        /// Control btnVentas.
+        /// Control TxtProducto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVentas;
+        protected global::System.Web.UI.WebControls.TextBox TxtProducto;
 
         /// <summary>
-        /// Control btnCompras.
+        /// Control txtPDesc.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCompras;
+        protected global::System.Web.UI.WebControls.TextBox txtPDesc;
 
         /// <summary>
-        /// Control btnCatalogos.
+        /// Control txtPPrecio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCatalogos;
+        protected global::System.Web.UI.WebControls.TextBox txtPPrecio;
 
         /// <summary>
-        /// Control btnFinanzas.
+        /// Control FileNC.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFinanzas;
+        protected global::System.Web.UI.WebControls.FileUpload FileNC;
 
         /// <summary>
-        /// Control BtnUsuarios.
+        /// Control btnGuardar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUsuarios;
+        protected global::System.Web.UI.WebControls.Button btnGuardar;
     }
 }

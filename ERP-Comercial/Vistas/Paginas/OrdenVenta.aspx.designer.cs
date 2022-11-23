@@ -11,52 +11,34 @@ namespace ERP_Comercial.Vistas.Paginas
 {
 
 
-    public partial class Menu
+    public partial class OrdenVenta
     {
 
         /// <summary>
-        /// Control btnVentas.
+        /// Control OrdenV.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVentas;
+        protected global::System.Web.UI.WebControls.GridView OrdenV;
 
         /// <summary>
-        /// Control btnCompras.
+        /// Control DescargarOrden.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCompras;
+        protected global::System.Web.UI.WebControls.ImageButton DescargarOrden;
 
         /// <summary>
-        /// Control btnCatalogos.
+        /// Control EmailOrden.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCatalogos;
-
-        /// <summary>
-        /// Control btnFinanzas.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFinanzas;
-
-        /// <summary>
-        /// Control BtnUsuarios.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUsuarios;
+        protected global::System.Web.UI.WebControls.ImageButton EmailOrden;
     }
 }

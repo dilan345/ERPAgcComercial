@@ -1,35 +1,27 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BarraNavegacion.master.cs" Inherits="ERP_Comercial.Vistas.PaginasMaestras.BarraNavegacion" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="ERP_Comercial.Vistas.PaginasMaestras.Home" %>
 
 <!DOCTYPE html>
-
-<html>
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <%-- PENDIENTE --%>
     <script src="https://kit.fontawesome.com/8ecd014e5f.js" crossorigin="anonymous"></script>
-    <%-- PENDIENTE --%>
-    <link href="../Estilos/Estilo.css" rel="stylesheet" />
+    <link href="../Estilos/EstiloI.css" rel="stylesheet" />
     <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Estilos/Recursos/LOGO CUBO.png" rel="icon" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
-     <%-- LINKS DE LAS PÁGINAS VINCULADAS --%>
-    <link href="../Estilos/Men.css" rel="stylesheet" />
 </head>
-
 <body>
+
     <form id="form1" runat="server">
         <div>
             <%-- Barra de navegación --%>
             <nav class="navbar navbar-dark bg-dark fixed-top">
                 <div class="container-fluid">
                     <a href="#">
-                        <asp:Image ID="CuboAGC" runat="server" ImageUrl="~/Vistas/Estilos/Recursos/LOGO CUBO.png" alt="Logo" Width="80" Height="60" /></a>
+                        <img src="../Estilos/Recursos/LOGO CUBO.png" alt="Logo" width="80" height="60" class="d-inline-block align-text-top"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -41,7 +33,6 @@
                         <div class="offcanvas-body">
                             <div class="row">
                                 <div clas="col">
-                                    <asp:ImageButton ID="LogOut" runat="server" ImageUrl="~/Vistas/Estilos/Recursos/Power.png" Style="margin-left:37vh" />
                                     <p style="text-align: center">Módulos</p>
                                 </div>
                             </div>
@@ -49,37 +40,42 @@
                             <%-- DropDown --%>
                             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                                 <%-- Ventas --%>
-                                <asp:DropDownList ID="Ventas" runat="server" class="dropdown bg-black text-light" AutoPostBack="True" OnSelectedIndexChanged="Ventas_SelectedIndexChanged">
-                                    <asp:ListItem Selected="True" disabled="True"> MENU </asp:ListItem>
-                                    <asp:ListItem Selected="False" Enabled="true" Value="Menu" >Cotización</asp:ListItem>
-                                    <asp:ListItem Selected="False" Enabled="true" Value="BorrarJWT">Orden de venta</asp:ListItem>
+                                <asp:DropDownList ID="Ventas" runat="server" Class="Drop bg-dark text-light">
+                                    <asp:ListItem Selected="True" disabled="True"> Ventas </asp:ListItem>
+                                    <asp:ListItem>Cotización</asp:ListItem>
+                                    <asp:ListItem>Orden de venta</asp:ListItem>
                                 </asp:DropDownList>
                                 <br />
-                                <%-- Compras --%>
-                                <asp:DropDownList ID="Compras" runat="server" class="dropdown bg-black text-light">
-                                    <asp:ListItem Selected="True" disabled="True"> Compras </asp:ListItem>
-                                    <asp:ListItem>*Pendiente*</asp:ListItem>
+                                <br />
+                                <%-- Ventas --%>
+                                <asp:DropDownList ID="Compras" runat="server" Class="Drop bg-dark text-light">
+                                    <asp:ListItem Selected="True" disabled="True"> Ventas </asp:ListItem>
+                                    <asp:ListItem>Pendiente</asp:ListItem>
                                 </asp:DropDownList>
                                 <br />
-                                <%-- Catálogos --%>
-                                <asp:DropDownList ID="Catálogos" runat="server" class="dropdown bg-black text-light">
+                                <br />
+                                <%-- Ventas --%>
+                                <asp:DropDownList ID="Catalogos" runat="server" Class="Drop bg-dark text-light">
                                     <asp:ListItem Selected="True" disabled="True"> Catálogos </asp:ListItem>
                                     <asp:ListItem>Productos</asp:ListItem>
                                     <asp:ListItem>Proveedores</asp:ListItem>
                                     <asp:ListItem>Clientes</asp:ListItem>
                                 </asp:DropDownList>
                                 <br />
-                                <%-- Finianzas --%>
-                                <asp:DropDownList ID="Finanzas" runat="server" class="dropdown bg-black text-light">
-                                    <asp:ListItem Selected="True" disabled="True"> Finanzas </asp:ListItem>
-                                    <asp:ListItem>*Pendiente*</asp:ListItem>
+                                <br />
+                                <%-- Ventas --%>
+                                <asp:DropDownList ID="Finanzas" runat="server" Class="Drop bg-dark text-light">
+                                    <asp:ListItem Selected="True" disabled="True"> Catálogos </asp:ListItem>
+                                    <asp:ListItem>Pendiente</asp:ListItem>
                                 </asp:DropDownList>
                                 <br />
-                                <%-- Finianzas --%>
-                                <asp:DropDownList ID="Usuarios" runat="server" class="dropdown bg-black text-light">
-                                    <asp:ListItem Selected="True" disabled="True"> Usuarios </asp:ListItem>
-                                    <asp:ListItem>*Pendiente*</asp:ListItem>
+                                <br />
+                                <%-- Ventas --%>
+                                <asp:DropDownList ID="Usuarios" runat="server" Class="Drop bg-dark text-light">
+                                    <asp:ListItem Selected="True" disabled="True"> Catálogos </asp:ListItem>
+                                    <asp:ListItem>Editar usuarios</asp:ListItem>
                                 </asp:DropDownList>
+                                
                             </ul>
                         </div>
                     </div>
@@ -101,8 +97,10 @@
                         <p class="text text-center">
                             <br />
                             Priv. Héroes de Nacozari s/n, Ozumbilla,Tecámac, Santa María
-                        <br />
+                       
+                            <br />
                             Ozumbilla, C.P.55760, Edo. Méx. 
+                       
                         </p>
                         <div class="row  text-center justify-content-center">
                             <div class="col">
@@ -112,7 +110,7 @@
                                 <p class="text"><i class="fa-brands fa-whatsapp"></i> 779 102 3377</p>
                             </div>
                             <div class="row  text-center">
-                                <p class="text">Derechos Reservados- AGC Comercial &copy 2022    </p>
+                                <p class="text">Derechos Reservados- AGC Comercial &copy 2022</p>
                             </div>
                         </div>
 
@@ -143,3 +141,4 @@
     <script src="../../Scripts/bootstrap.min.js"></script>
 </body>
 </html>
+

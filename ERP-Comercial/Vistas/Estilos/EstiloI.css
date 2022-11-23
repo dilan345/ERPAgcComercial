@@ -15,11 +15,11 @@
 
 /*Head*/
 
-.nav{
-    margin-left:20px;
-    text-decoration:none;
-    font-size:1rem;
-    color:aliceblue
+.nav {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: aliceblue
 }
 
 /* - - - - - - - - - - EDITADO POR ALEX BARRA INICIO - - - - - - - - - -*/
@@ -69,8 +69,9 @@
 
 /* - - - - - - - - - - EDITADO POR ALEX BARRA INICIO - - - - - - - - - -*/
 /*Cuerpo*/
-.dropdown {
-    border-style: solid;
+
+.Drop {
+    border-radius: 8px;
     border-radius: 9px;
     text-align: center;
 }
@@ -89,10 +90,6 @@
     font-size: 11px;
 }
 
-#LogOut{
-    margin-right:20px;
-}
-
 /*Pie de pagina*/
 footer {
     width: 100%;
@@ -106,8 +103,16 @@ footer {
     font-size: 2.5em;
 }
 
+a {
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+    margin-left:20px;
+}
+
 /*Hover*/
-i:hover,.nav:hover{
-    
+
+i:hover {
+    color: #fe9902;
 }
 

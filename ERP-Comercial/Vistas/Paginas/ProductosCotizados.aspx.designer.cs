@@ -11,52 +11,43 @@ namespace ERP_Comercial.Vistas.Paginas
 {
 
 
-    public partial class Menu
+    public partial class ProductosCotizados
     {
 
         /// <summary>
-        /// Control btnVentas.
+        /// Control Productos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVentas;
+        protected global::System.Web.UI.WebControls.GridView Productos;
 
         /// <summary>
-        /// Control btnCompras.
+        /// Control Atras.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCompras;
+        protected global::System.Web.UI.WebControls.ImageButton Atras;
 
         /// <summary>
-        /// Control btnCatalogos.
+        /// Control Confirmar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCatalogos;
+        protected global::System.Web.UI.WebControls.ImageButton Confirmar;
 
         /// <summary>
-        /// Control btnFinanzas.
+        /// Control DescargarCotiza.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFinanzas;
-
-        /// <summary>
-        /// Control BtnUsuarios.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUsuarios;
+        protected global::System.Web.UI.WebControls.ImageButton DescargarCotiza;
     }
 }

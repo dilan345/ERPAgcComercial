@@ -55,11 +55,9 @@
                 <div class="col-12 col-md-6 col-lg-6 align-self-center justify-content-center" style="width: 45vh;">
                     <div class="card">
                         <asp:Image runat="server" ImageUrl="~/Vistas/Estilos/Recursos/LOGOS AGC - LINEA DE PRODUCTOS.png" alt="logoAGC3" 
-                            class="card-img-top align-self-center" style="height: 22vh; width: 65%;"/>
+                            class="card-img-top align-self-center" style="height: 28vh; width: 65%;"/>
                         <div class="card-body">
-                            <h5 class="card-title"><b>PRUEBA JWT</b></h5>
-                            <p class="card-text"></p>
-                            <asp:Button ID="Button1" runat="server" Text="Ver" class="btn btn-secondary btn-lg" OnClick="btnPruebas_Click" />
+                            <h5 class="card-title"><b>AGC Comercial</b></h5>
                         </div>
                     </div>
                 </div>

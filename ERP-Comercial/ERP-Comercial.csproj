@@ -118,17 +118,21 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Vistas\Estilos\CatalogoCl.css" />
+    <Content Include="Vistas\Estilos\CatalogoCli.css" />
     <Content Include="Vistas\Estilos\CatalogoPr.css" />
     <Content Include="Vistas\Estilos\CatalogoProv.css" />
     <Content Include="Vistas\Estilos\Cotizaciones.css" />
-    <Content Include="Vistas\Estilos\Estilo.css" />
+    <Content Include="Vistas\Estilos\EstiloI.css" />
     <Content Include="Vistas\Estilos\Login.css" />
     <Content Include="Vistas\Estilos\Men.css" />
     <Content Include="Vistas\Estilos\NuevaCo.css" />
+    <Content Include="Vistas\Estilos\NuevoCli.css" />
+    <Content Include="Vistas\Estilos\NuevoProducto.css" />
+    <Content Include="Vistas\Estilos\NuevoProveedor.css" />
     <Content Include="Vistas\Estilos\OrdenV.css" />
     <Content Include="Vistas\Estilos\ProductoCot.css" />
     <Content Include="Vistas\Estilos\Recursos\arrow-left-solid.svg" />
+    <Content Include="Vistas\Estilos\Recursos\brick-wall.jpg" />
     <Content Include="Vistas\Estilos\Recursos\Catalogo.jpg" />
     <Content Include="Vistas\Estilos\Recursos\Check.png" />
     <Content Include="Vistas\Estilos\Recursos\circle-plus-solid.svg" />
@@ -137,6 +141,7 @@
     <Content Include="Vistas\Estilos\Recursos\envelope-regular.svg" />
     <Content Include="Vistas\Estilos\Recursos\Finanzas.jpg" />
     <Content Include="Vistas\Estilos\Recursos\FondoClientes.jpg" />
+    <Content Include="Vistas\Estilos\Recursos\FondoNuevoProveedor.jpg" />
     <Content Include="Vistas\Estilos\Recursos\FondoOrdenV.jpg" />
     <Content Include="Vistas\Estilos\Recursos\FondoProductosC.jpg" />
     <Content Include="Vistas\Estilos\Recursos\FondoProveedores.jpg" />
@@ -153,8 +158,18 @@
     <Content Include="Vistas\Estilos\Recursos\Ventas.jpg" />
     <Content Include="Vistas\Login.aspx" />
     <Content Include="Vistas\Logout.aspx" />
+    <Content Include="Vistas\Paginas\AgregarCliente.aspx" />
+    <Content Include="Vistas\Paginas\CatalogoClientes.aspx" />
+    <Content Include="Vistas\Paginas\CatalogoProveedor.aspx" />
+    <Content Include="Vistas\Paginas\Cotizaciones.aspx" />
     <Content Include="Vistas\Paginas\Menu.aspx" />
     <Content Include="TEMPORALES.txt" />
+    <Content Include="Vistas\Paginas\NuevaCotizacion.aspx" />
+    <Content Include="Vistas\Paginas\NuevoProducto.aspx" />
+    <Content Include="Vistas\Paginas\NuevoProveedor.aspx" />
+    <Content Include="Vistas\Paginas\OrdenVenta.aspx" />
+    <Content Include="Vistas\Paginas\CatalogoProductos.aspx" />
+    <Content Include="Vistas\Paginas\ProductosCotizados.aspx" />
     <Content Include="Vistas\Paginas\PruebaSelected.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -164,15 +179,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202211200533579_TablasVersion-1.cs" />
-    <Compile Include="Migrations\202211200533579_TablasVersion-1.designer.cs">
-      <DependentUpon>202211200533579_TablasVersion-1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202211200633509_ActualizacionUsuario.cs" />
-    <Compile Include="Migrations\202211200633509_ActualizacionUsuario.designer.cs">
-      <DependentUpon>202211200633509_ActualizacionUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\CotizacionVenta.cs" />
     <Compile Include="Models\Factura.cs" />
@@ -202,13 +208,6 @@
     <Compile Include="Vistas\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\PaginasMaestras\BarraNavegacion.Master.cs">
-      <DependentUpon>BarraNavegacion.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vistas\PaginasMaestras\BarraNavegacion.Master.designer.cs">
-      <DependentUpon>BarraNavegacion.Master</DependentUpon>
-    </Compile>
     <Compile Include="Vistas\PaginasMaestras\Estandar.Master.cs">
       <DependentUpon>Estandar.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -216,12 +215,89 @@
     <Compile Include="Vistas\PaginasMaestras\Estandar.Master.designer.cs">
       <DependentUpon>Estandar.Master</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\PaginasMaestras\Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\PaginasMaestras\Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\AgregarCliente.aspx.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\AgregarCliente.aspx.designer.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\CatalogoClientes.aspx.cs">
+      <DependentUpon>CatalogoClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\CatalogoClientes.aspx.designer.cs">
+      <DependentUpon>CatalogoClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\CatalogoProveedor.aspx.cs">
+      <DependentUpon>CatalogoProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\CatalogoProveedor.aspx.designer.cs">
+      <DependentUpon>CatalogoProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\Cotizaciones.aspx.cs">
+      <DependentUpon>Cotizaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\Cotizaciones.aspx.designer.cs">
+      <DependentUpon>Cotizaciones.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Paginas\Menu.aspx.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vistas\Paginas\Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\NuevaCotizacion.aspx.cs">
+      <DependentUpon>NuevaCotizacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\NuevaCotizacion.aspx.designer.cs">
+      <DependentUpon>NuevaCotizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\NuevoProducto.aspx.cs">
+      <DependentUpon>NuevoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\NuevoProducto.aspx.designer.cs">
+      <DependentUpon>NuevoProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\NuevoProveedor.aspx.cs">
+      <DependentUpon>NuevoProveedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\NuevoProveedor.aspx.designer.cs">
+      <DependentUpon>NuevoProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\OrdenVenta.aspx.cs">
+      <DependentUpon>OrdenVenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\OrdenVenta.aspx.designer.cs">
+      <DependentUpon>OrdenVenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\CatalogoProductos.aspx.cs">
+      <DependentUpon>CatalogoProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\CatalogoProductos.aspx.designer.cs">
+      <DependentUpon>CatalogoProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Paginas\ProductosCotizados.aspx.cs">
+      <DependentUpon>ProductosCotizados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Paginas\ProductosCotizados.aspx.designer.cs">
+      <DependentUpon>ProductosCotizados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Paginas\PruebaSelected.aspx.cs">
       <DependentUpon>PruebaSelected.aspx</DependentUpon>
@@ -256,7 +332,7 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Vistas\PaginasMaestras\Estandar.Master" />
-    <Content Include="Vistas\PaginasMaestras\BarraNavegacion.Master" />
+    <Content Include="Vistas\PaginasMaestras\Home.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -266,14 +342,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202211200533579_TablasVersion-1.resx">
-      <DependentUpon>202211200533579_TablasVersion-1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202211200633509_ActualizacionUsuario.resx">
-      <DependentUpon>202211200633509_ActualizacionUsuario.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
